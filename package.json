@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "dev": "npm run start --stage local",
+    "dev": "npm run start --stage local --host 0.0.0.0",
     "start": "node --require ts-node/register src/index.ts",
     "build:clean": "rm -rf ./dist/*; rm ./dist/*; mkdir ./dist/logs;",
     "build:config": "cp ./src/config.json ./dist/config.json; cp ./package.json ./dist/package.json",
