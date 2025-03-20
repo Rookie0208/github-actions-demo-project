@@ -36,5 +36,8 @@ jobs:
       - name: Build image
         run: docker build -t rookie0208/docker-frontent-demo:latest .
 
+      - name: 🔍 Verify Built Images
+        run: docker images | grep rookie0208/docker-frontend-demo
+
       - name: push image to docker
         run: docker push rookie0208/docker-frontend-demo:latest
