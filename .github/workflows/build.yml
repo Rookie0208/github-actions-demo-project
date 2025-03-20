@@ -34,7 +34,8 @@ jobs:
         run: npm run build
 
       - name: Build image
-        run: docker build -t rookie0208/docker-frontent-demo:latest .
+        # run: docker build -t rookie0208/docker-frontent-demo:latest .
+        run: docker buildx build --load -t rookie0208/docker-frontend-demo:latest .
 
       - name: push image to docker
         run: docker push rookie0208/docker-frontend-demo:latest
