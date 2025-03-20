@@ -1,12 +1,12 @@
 name: build from branch
 
 on:
-    workflow_dispatch:
-        inputs:
-          branch_name:
-            description: "Branch to test"
-            required: true
-            default: "main"
+  workflow_dispatch:
+      inputs:
+        branch_name:
+          description: "Branch to test"
+          required: true
+          default: "main"
 
 jobs:
   build-and-test:
