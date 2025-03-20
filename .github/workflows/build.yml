@@ -34,7 +34,7 @@ jobs:
         run: npm run build
 
       - name: Build image
-        run: docker build -t ./src/ rookie0208/docker-frontent-demo:latest
+        run: docker build ./src/ -t rookie0208/docker-frontent-demo:latest
 
       - name: push image to docker
         run: docker push rookie0208/docker-frontend-demo:latest
