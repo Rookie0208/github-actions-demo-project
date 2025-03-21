@@ -39,5 +39,5 @@ jobs:
 
       - name: push image to docker
         run: |
-          docker login -u roookie0208 -p ${{secrets.DOCKER_HUB_TOKEN_DEMO}}
+          docker login -u rookie0208 -p ${{secrets.DOCKER_HUB_TOKEN_DEMO}}
           docker push rookie0208/docker-frontend-demo:latest
