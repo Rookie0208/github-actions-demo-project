@@ -38,4 +38,6 @@ jobs:
         run: docker buildx build --load -t rookie0208/docker-frontend-demo:latest .
 
       - name: push image to docker
-        run: docker push rookie0208/docker-frontend-demo:latest
+        run: |
+          docker login -u roookie0208 -p ${{secrets.DOCKER_HUB_TOKEN_DEMO}}
+          docker push rookie0208/docker-frontend-demo:latest
